@@ -7,6 +7,9 @@ import { PowerBoosterComponent } from './power-booster/power-booster.component';
 import { ExponentialStrengthPipePipe } from './exponential-strength-pipe.pipe';
 import { HighlightDirectiveDirective } from './highlight-directive.directive';
 
+// 雙向綁定
+import {FormsModule} from '@angular/forms';
+
 @NgModule({
   // compent dirctive pipe 放的地方
   declarations: [
@@ -17,7 +20,8 @@ import { HighlightDirectiveDirective } from './highlight-directive.directive';
   // 依賴其他Module
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
 
   // services存放
